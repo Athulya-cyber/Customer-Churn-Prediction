@@ -152,10 +152,9 @@ target variable is somewhat imbalanced.
 
 ### Best Parameters
 
-```text
-C = 0.1
-Kernel = Linear
-Gamma = scale
+- `C = 0.1`
+- `Kernel = Linear`
+- `Gamma = scale`
 
 
 ### Best Cross-Validation F1 Score
