@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
 st.header("🤖 Customer Churn Prediction")
 
@@ -9,7 +10,10 @@ st.markdown(
 )
 
 # Load trained model
-model = joblib.load(r"C:\Users\Lenovo\Desktop\Customer Churn Prediction\Model\best_model.joblib")
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+model_path = BASE_DIR / "best_model.joblib"
+
+model = joblib.load(model_path)
 
 
 
