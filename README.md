@@ -184,4 +184,92 @@ the model's decision scores.
 
 ## 🌐 Streamlit Application
 
-The project includes an interactive Streamlit application as well.
+The project includes an interactive **Streamlit web application** with three pages:
+
+### 🏠 Home
+Provides an overview of the Customer Churn Prediction project.
+
+### 📊 Data Analysis
+Allows users to upload the **Telco Customer Churn CSV dataset** and explore:
+
+- Dataset records and features
+- Column descriptions
+- Descriptive statistics
+- Churn distribution
+- Churn by contract type
+- Churn by internet service
+- Churn by payment method
+- Tenure vs Churn
+- Monthly Charges vs Churn
+- Total Charges vs Churn
+- Key insights from the analysis
+
+### 🔮 Prediction
+Allows users to enter customer information and predict whether the customer is likely to churn using the trained SVM model.
+
+The prediction page uses the saved `best_model.joblib` file and does not require the original dataset.
+
+---
+
+## 📂 Dataset Source
+
+The **Telco Customer Churn dataset** was obtained from Kaggle:
+
+**Kaggle Dataset:**  
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+The dataset is **not included in this GitHub repository**.
+
+To use the Data Analysis page:
+
+1. Download the Telco Customer Churn dataset from Kaggle.
+2. When downloading the dataset, select all 21 columns to obtain the complete dataset used in this project.
+3. Open the Streamlit application.
+4. Navigate to **Data Analysis**.
+5. Upload the CSV file using the dataset upload option.
+
+---
+
+
+
+## ▶️ Running the Streamlit Application
+
+Clone or download the repository and navigate to the `app` directory:
+
+```bash
+cd app
+```
+
+Run the Streamlit application:
+
+```bash
+python -m streamlit run app.py
+```
+
+The application will open in your default web browser.
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Joblib
+- Streamlit
+
+---
+
+## 📌 Project Highlights
+
+- End-to-end customer churn prediction project
+- Data cleaning and exploratory data analysis
+- Numerical and categorical feature preprocessing
+- SVM kernel comparison
+- Hyperparameter optimization using GridSearchCV
+- Model evaluation using multiple classification metrics
+- Interactive Streamlit dashboard
+- Customer churn prediction using a trained SVM model
